@@ -7,11 +7,4 @@ Nesse workshop vocês aprenderão a como realizar a migração da base de dados 
 ## Agenda 
 
 - **[O que é CosmosDb?]()**
-- **[Migrando da Base local para o CosmosDb]()**
-- **[Demo 2]()**
-- **[O que é Azure Storage Account?]()**
-- **[Realizando o Deploy via Visual Studio Code]()**
-- **[Demo 3]()**
-- **[<Colocar mais algum tópico>]()**
-- **[<Colocar mais algum tópico>]()**
-- **[Palavras Finais]()**
+- **[Workshop 2 - Realizando a Migração da Base de Dados local para CosmosDb]()**
