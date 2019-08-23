@@ -1,4 +1,4 @@
-## Workshop 2: Realizando a Migração da Base de Dados Local do Azure Functions para o CosmosDb
+## Workshop 2: Realizando a Migração da Base de Dados Local para o CosmosDb
 
 [![bit-azure.png](https://i.postimg.cc/ZKwS8SHj/bit-azure.png)](https://postimg.cc/vcxkyCp6)
 
