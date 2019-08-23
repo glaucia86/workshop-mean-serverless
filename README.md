@@ -6,7 +6,7 @@ Repositório responsável pelo workshops de MEAN & Serverless.
 
 ## O que eu vou aprender?! 📙
 
-Durante o tutorial, você aprenderá a desenvolver uma aplicação que consiste em realizar um cadastro de um Funcionário para uma empresa XYZ. A qual, usaremos as operações CRUD (Create, Read, Update & Delete). A aplicação estará integrada com o Back-End(Node.js) e estará hospedada na plataforma Cloud da Microsoft - Azure.
+Durante esse workshop você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!
 
 Os dados do Funcionário consiste em:
 
