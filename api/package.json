@@ -1,0 +1,49 @@
+{
+  "name": "api-palestrantes-braziljs",
+  "version": "1.0.0",
+  "description": "API de Palestrantes da Braziljs Conf 2019.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "mongoose",
+    "mongodb",
+    "azure",
+    "app-service",
+    "cosmosdb",
+    "angular",
+    "express",
+    "mean-app",
+    "serverless",
+    "azure-functions"
+  ],
+  "author": "Glaucia Lemos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/demos-braziljs2019/issues"
+  },
+  "homepage": "https://github.com/glaucia86/demos-braziljs2019#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.3.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^5.0.5",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "mongoose": "^5.5.12",
+    "morgan": "^1.9.1"
+  }
+}
