@@ -13,7 +13,7 @@ const router = express.Router();
 router.get('/api', (req, res) => {
   res.status(200).send({
     success: 'true',
-    message: 'API de Palestrantes - BrazilJs Conf 2019',
+    message: 'Seja bem-vindo(a) a API Workshop Mean & Serverless',
     version: '1.0.0',
   });
 });

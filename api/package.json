@@ -1,7 +1,7 @@
 {
-  "name": "api-palestrantes-braziljs",
+  "name": "api-funcionarios-mean",
   "version": "1.0.0",
-  "description": "API de Palestrantes da Braziljs Conf 2019.",
+  "description": "API de Funcionarios para a Aplicação MEAN.",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon",
@@ -26,9 +26,9 @@
   "author": "Glaucia Lemos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/glaucia86/demos-braziljs2019/issues"
+    "url": "https://github.com/glaucia86/workshop-mean-serverless/issues"
   },
-  "homepage": "https://github.com/glaucia86/demos-braziljs2019#readme",
+  "homepage": "https://github.com/glaucia86/workshop-mean-serverless#readme",
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",

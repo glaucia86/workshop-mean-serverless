@@ -8,13 +8,13 @@
 module.exports = {
   local:
   {
-    localUrl: 'mongodb://localhost:27017/crud-demo-braziljs',
+    localUrl: 'mongodb://localhost:27017/meanserverless',
   },
 
   /* cosmosdb:
   {
-    name: 'crud-demo-braziljs',
-    url: 'mongodb://<cosmosdb_name>:<primary_master_key>@<cosmosdb_name>.documents.azure.com:10255/crud-demo-braziljs?ssl=true',
+    name: 'meanserverless',
+    url: 'mongodb://<cosmosdb_name>:<primary_master_key>@<cosmosdb_name>.documents.azure.com:10255/meanserverless?ssl=true',
     port: 10255,
   }, */
 };
