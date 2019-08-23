@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PalestranteAddComponent } from './palestrante-add/palestrante-add.component';
-import { PalestranteEditComponent } from './palestrante-edit/palestrante-edit.component';
-import { PalestranteGetComponent } from './palestrante-get/palestrante-get.component';
+import { FuncionarioAddComponent } from './funcionario-add/funcionario-add.component';
+import { FuncionarioEditComponent } from './funcionario-edit/funcionario-edit.component';
+import { FuncionarioGetComponent } from './funcionario-get/funcionario-get.component';
 
 const routes: Routes = [
-  { path: 'palestrante/create', component: PalestranteAddComponent },
-  { path: 'palestrante/:id', component: PalestranteEditComponent },
-  { path: 'palestrante', component: PalestranteGetComponent }
+  { path: 'funcionario/create', component: FuncionarioAddComponent },
+  { path: 'funcionario/:id', component: FuncionarioEditComponent },
+  { path: 'funcionario', component: FuncionarioGetComponent }
 ];
 
 @NgModule({

@@ -7,17 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PalestranteAddComponent } from './palestrante-add/palestrante-add.component';
-import { PalestranteGetComponent } from './palestrante-get/palestrante-get.component';
-import { PalestranteEditComponent } from './palestrante-edit/palestrante-edit.component';
-import { PalestranteService } from './palestrante.service';
+import { FuncionarioAddComponent } from './funcionario-add/funcionario-add.component';
+import { FuncionarioGetComponent } from './funcionario-get/funcionario-get.component';
+import { FuncionarioEditComponent } from './funcionario-edit/funcionario-edit.component';
+import { FuncionarioService } from './funcionario.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PalestranteAddComponent,
-    PalestranteGetComponent,
-    PalestranteEditComponent
+    FuncionarioAddComponent,
+    FuncionarioGetComponent,
+    FuncionarioEditComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +27,7 @@ import { PalestranteService } from './palestrante.service';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [ PalestranteService ],
+  providers: [ FuncionarioService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

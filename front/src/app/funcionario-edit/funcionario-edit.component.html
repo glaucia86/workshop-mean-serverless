@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="funcionarioForm" novalidate>
+
+      <div class="form-group">
+        <label>Nome do Funcionário</label>
+        <input type="text" class="form-control"
+          formControlName="nomeFuncionario"
+          #nomeFuncionario
+          [(ngModel)]="funcionario.nomeFuncionario"/>
+      </div>
+      <div *ngIf="funcionarioForm.controls['nomeFuncionario'].invalid && (funcionarioForm.controls['nomeFuncionario'].dirty || funcionarioForm.controls['nomeFuncionario'].touched)" class="alert alert-danger">
+        <div *ngIf="funcionarioForm.controls['nomeFuncionario'].errors.required">
+          Campo Obrigatório.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Cargo</label>
+        <input type="text" class="form-control"
+          formControlName="cargo"
+          #cargo
+          [(ngModel)]="funcionario.cargo"/>
+      </div>
+      <div *ngIf="funcionarioForm.controls['cargo'].invalid && (funcionarioForm.controls['cargo'].dirty || funcionarioForm.controls['cargo'].touched)" class="alert alert-danger">
+        <div *ngIf="funcionarioForm.controls['cargo'].errors.required">
+          Campo Obrigatório.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Número Identificador</label>
+        <input type="text" class="form-control"
+          formControlName="numeroIdentificador"
+          #numeroIdentificador
+          [(ngModel)]="funcionario.numeroIdentificador"/>
+      </div>
+      <div *ngIf="funcionarioForm.controls['numeroIdentificador'].invalid && (funcionarioForm.controls['numeroIdentificador'].dirty || funcionarioForm.controls['numeroIdentificador'].touched)" class="alert alert-danger">
+        <div *ngIf="funcionarioForm.controls['numeroIdentificador'].errors.required">
+          Campo Obrigatório.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button (click)="atualizarFuncionario(nomeFuncionario.value, cargo.value, numeroIdentificador.value)" type="submit" class="btn btn-primary"
+          [disabled]="funcionarioForm.invalid"><fa name="edit"></fa> Atualizar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
