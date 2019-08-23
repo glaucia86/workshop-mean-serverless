@@ -1,4 +1,4 @@
-## Workshop 1: Realizando a Migração da Aplicação MEAN para Azure Functions Localmente via MongoDb
+## Workshop 1: Realizando a Migração da Aplicação MEAN para Azure Functions Persistindo Localmente via MongoDb
 
 [![bit-azure.png](https://i.postimg.cc/ZKwS8SHj/bit-azure.png)](https://postimg.cc/vcxkyCp6)
 
