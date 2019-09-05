@@ -2,17 +2,17 @@
 
 [![bit-community.png](https://i.postimg.cc/4yVhWzYt/bit-community.png)](https://postimg.cc/BPZ66PcQ)
 
-Repositório responsável pelo workshops de MEAN & Serverless.
+Repositorio responsable de los workshops MEAN y Serverless.
 
-## O que eu vou aprender?! 📙
+## ¿Qué voy a aprender? 📙
 
-Durante esse workshop você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!
+¡Durante este workshop aprenderá cómo migrar de manera simple, rápida y dinámica una aplicación MEAN a una arquitectura Serverless usando Azure Functions!
 
-Os dados do Funcionário consiste em:
+Los datos del Empleado consisten en:
 
 **Classe: Funcionario**
 
-+ idFuncionario: (number - guid gerado pelo MongoDb)
++ idFuncionario: (number - guid generado por el MongoDb)
 + nomeFuncionario: string
 + cargo: string
 + numeroIdentificador: number
