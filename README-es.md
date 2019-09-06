@@ -10,7 +10,7 @@ Repositorio responsable de los workshops MEAN y Serverless.
 
 Los datos del Empleado consisten en:
 
-**Classe: Funcionario**
+**Classe: Funcionario (Empleado)**
 
 + idFuncionario: (number - guid generado por el MongoDb)
 + nomeFuncionario: string
@@ -23,18 +23,18 @@ Los datos del Empleado consisten en:
 * **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Node.js](https://nodejs.org/en/)**
 * **[Postman](https://www.getpostman.com/)**
-* **[Conta - Azure](https://azure.microsoft.com/pt-br/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+* **[Conta - Azure](https://azure.microsoft.com/es-es/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Azure Web App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Mongodb Community Server](https://www.mongodb.com/download-center/community)**
 * **[MongodB Compass GUI](https://www.mongodb.com/download-center/compass)**
 * **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Azure Storage Account](https://azure.microsoft.com/pt-br/services/storage/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-## Conta - Azure for Students ⭐️
+## Azure for Students ⭐️
 
-Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no **[Azure for Students](https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+Si es estudiante en cualquier colegio o universidad, puede crear su cuenta de Azure for Students **[Azure for Students](https://azure.microsoft.com/es-es/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/es-es/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-## Pré-requisitos 📌
+## Requisitos Necesarios 📌
 
 Para a realização dos workshops de React.js, se faz necessário ter noções de: **HTML, CSS & JavaScript**. Pensando nisso, estou disponibilizando abaixo dois cursos grátis de:
 
