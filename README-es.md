@@ -36,71 +36,73 @@ Si es estudiante en cualquier colegio o universidad, puede crear su cuenta de Az
 
 ## Requisitos Necesarios 📌
 
-Para a realização dos workshops de React.js, se faz necessário ter noções de: **HTML, CSS & JavaScript**. Pensando nisso, estou disponibilizando abaixo dois cursos grátis de:
+Para la realización de los workshops, es necesario tener nociones de: **HTML, CSS y JavaScript**. Y también nociones de Azure Functions. Abajo hay cursos gratuitos sobre:
 
-* **[Crie um site simples usando HTML, CSS e JavaScript](https://docs.microsoft.com/learn/modules/build-simple-website/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+* **[Curso Gratuito - Creación de un sitio web sencillo con HTML, CSS y Javascript](https://docs.microsoft.com/es-es/learn/modules/build-simple-website/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-* **[Desenvolva aplicativos Web com o Visual Studio Code](https://docs.microsoft.com/learn/modules/develop-web-apps-with-vs-code/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+* **[Curso Gratuito - Desarrollo de aplicaciones web con Visual Studio Code](https://docs.microsoft.com/es-es/learn/modules/develop-web-apps-with-vs-code/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-## Executando a Aplicação Localmente ❗️
+- ✅ **[Curso Gratuito - Creación de aplicaciones sin servidor](https://docs.microsoft.com/es-es/learn/paths/create-serverless-applications/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-### Executando a aplicação no lado do Front-End
+## Ejecutando la Aplicación Localmente ❗️
 
-1) Instalar os pacotes com o comando: (dentro da pasta `front`)
+### Ejecutando la Aplicación en el Front-End
+
+1) Instalar paquetes con comando: (dentro de la carpeta `front`)
 
 ``` 
 > npm install
 ```
 
-2) Depois executar o seguinte comando para executar a aplicação (dentro da pasta `front`):
+2) Luego ejecute el siguiente comando para ejecutar la aplicación. (dentro de la carpeta `front`):
 
 ```
 > ng serve -o
 ```
 
-Depois bastam abrir o browser em **localhost:4200** (porta padrão de uma aplicação Angular)
+Luego simplemente abra el navegador en **localhost: 4200**
 
-### Executando a aplicação no lado do Back-End
+### Ejecutando la Aplicación en el Back-End
 
-Antes de iniciar os passos abaixo é muito importante que você execute nesse momento o MongoDb localmente!
+Antes de comenzar los pasos a continuación, es muy importante que ahora ejecute MongoDb localmente.
 
-1) Instalar os pacotes com o comando: (dentro da pasta `api`)
+1) Instalar paquetes con comando: (dentro de la carpeta `api`)
 
 ``` 
 > npm install
 ```
 
-2) Depois executar o seguinte comando para executar a aplicação (dentro da pasta `api`):
+2) Luego ejecute el siguiente comando para ejecutar la aplicación. (dentro de la carpeta `api`):
 
 ```
 > nodemon
 ```
 
-Depois bastam abrir o postamn em **localhost:8000** e testar as requisições
+Luego simplemente abra el Postman en **localhost: 8000** y pruebe las requisiciones
 
-E vòilá! :heart: :heart:
+Y vòilá! :heart: :heart:
 
-## Consumindo as API's no Azure Functions(Mongo x CosmosDb) ⚡️
+## Consumir las API's en Azure Functions(Mongo x CosmosDb) ⚡️
 
-Visando facilitar o desenvolvimento e agilidade do projeto, já criei duas API que consomem esse projeto no Front-End. Para isso, seguem os links das apis:
+Para facilitar el desarrollo y la agilidad del proyecto, ya creé dos API que consumen este proyecto en Front End. Para esto, siga los enlaces de apis:
 
-### API via MongoDb - Azure Functions
+### API a través de MongoDb - Azure Functions
 
-Essa API persiste localmente no MongoDb via Azure Functions.
+Esta API persiste localmente en MongoDb a través de Azure Functions.
 
-Para executar, bastam seguir os seguintes passos:
+Para ejecutar, solo siga estos pasos:
 
-1. Baixar o projeto abaixo:
+1. Descargue el proyecto a continuación:
 
 - **[CRUD Serverless MongoDb](https://github.com/glaucia86/crud-serverless-mongodb)**
 
-2. Instalar as dependências necessárias com o comando:
+2. Instale las dependencias requeridas con el comando:
 
 ```bash
 > npm i
 ```
 
-3. Criar um arquivo chamado: `local.settings.json` e incluir o bloco de código abaixo:
+3. Crea un archivo llamado: `local.settings.json` e incluya el bloque de código:
 
 ```json
 {
@@ -115,39 +117,39 @@ Para executar, bastam seguir os seguintes passos:
   }
 }
 ```
-4. Execute o comando:
+4. Ejecute el comando:
 
 ```bash
 > func host start
 ```
 
-E ele irá listar todos os endpoints criados e necessários para persistir juntamente com o nosso Front-End.
+Y enumerará todos los endpoints creados y necesarios para persistir junto con nuestro Front-End.
 
-5. Agora abre o projeto `front` e vão até: `src -> app -> funcionario.service.ts`
+5. Ahora abre el proyecto `front` y vaya: `src -> app -> funcionario.service.ts`
 
-6. Ao entrar no arquivo `funcionario.service.ts`, basta alterar a uri para: `http://localhost:7071/api`
+6. Al ingresar el archivo `funcionario.service.ts`, solo cambia la uri a: `http://localhost:7071/api`
 
-7. Execute o projeto Angular com o comando: 
+7. Ejecute el proyecto angular con el comando: 
 
 ```bash
 > ng server -o
 ```
 
-E vòilá! Só começar a persistir!
+Y vòilá! Sólo empezar a persistir!!
 
-### API via CosmosDb - Azure Functions
+### API a través de CosmosDb - Azure Functions
 
-1. Baixar o projeto abaixo:
+1. Descargue el proyecto:
 
 - **[CRUD Serverless CosmosDb](https://github.com/glaucia86/crud-serverless-cosmosdb)**
 
-2. Instalar as dependências necessárias com o comando:
+2. Instale las dependencias requeridas con el comando:
 
 ```bash
 > npm i
 ```
 
-3. Criar um arquivo chamado: `local.settings.json` e incluir o bloco de código abaixo:
+3. Crea un archivo llamado: `local.settings.json` e incluya el bloque de código:
 
 ```json
 {
@@ -166,37 +168,37 @@ E vòilá! Só começar a persistir!
 }
 ```
 
-4. Execute o comando:
+4. Ejecute el comando:
 
 ```bash
 > func host start
 ```
 
-E ele irá listar todos os endpoints criados e necessários para persistir juntamente com o nosso Front-End.
+Y enumerará todos los endpoints creados y necesarios para persistir junto con nuestro Front-End.
 
-5. Agora abre o projeto `front` e vão até: `src -> app -> funcionario.service.ts`
+5. Ahora abre el proyecto `front` y vaya: `src -> app -> funcionario.service.ts`
 
-6. Ao entrar no arquivo `funcionario.service.ts`, basta alterar a uri para: `http://localhost:7071/api`
+6. Al ingresar el archivo `funcionario.service.ts`, solo cambia la uri a: `http://localhost:7071/api`
 
-7. Execute o projeto Angular com o comando: 
+7. Ejecute el proyecto angular con el comando: 
 
 ```bash
 > ng server -o
 ```
 
-E vòilá! Só começar a persistir!
+Y vòilá! Sólo empezar a persistir!!
 
-### Quero migrar os dados persistidos localmente para o CosmosDb... Como faço?!
+### Me gustaría migrar los datos persistentes localmente a Cosmos Db ... ¿Cómo lo hago?
 
-O processo de migração dos dados localmente persistidos pelo MongoDb para o CosmosDb é bem simples. Porém, recomendo que para deixar o processo mais fácil que baixem o **[MongodB Compass GUI](https://www.mongodb.com/download-center/compass)** e possuir uma conta do **[Conta - Azure](https://azure.microsoft.com/pt-br/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Tendo esses dois recursos,poderemos seguir com os seguintes passos abaixo:
+El proceso de migración de datos persistentes localmente de MongoDb a CosmosDb es bastante simple. Sin embargo, le recomiendo que para facilitar el proceso, descargue el **[MongodB Compass GUI](https://www.mongodb.com/download-center/compass)** y tener una cuenta del **[Conta - Azure](https://azure.microsoft.com/es-es/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Teniendo estas dos cuentas, podemos continuar.
 
-1. Passo: abre o portal Azure e crie um Grupo de Recursos. Se tiver já um criado, ótimo!
+1. Paso: abra el portal de Azure y cree un grupo de recursos. Si ya tienes un grupo de recursos, ¡genial!
 
 ```bash
 > meanServerlessResourceGroup
 ```
 
-2. Passo: agora vamos criar o Base de dados no Azure CosmosDb. Para isso, abre o seu bash no Portal Azure e execute os seguintes comandos abaixo:
+2. Paso: ahora creemos la base de datos Azure CosmosDb. Para hacerlo, abra su bash en Azure Portal y ejecute los siguientes comandos:
 
 ```bash
 > crud--serverless-<inclua-seu-nome>
@@ -204,31 +206,27 @@ O processo de migração dos dados localmente persistidos pelo MongoDb para o Co
 > az cosmosdb create --name crud--serverless-<inclua-seu-nome> --resource group meanServerlessResourceGroup --kind MongoDB
 ```
 
-3. Abre o recurso recém criado e capture as connections strings (primary key) criada no passo anterior.
+3. Abra el recurso recién creado y capture las cadenas de conexión (clave principal) creadas en el paso anterior.
 
-4. Passo: agora vamos importar os dados localmente do MongoDb para o CosmosDb. Para isso, bastam abrir o MongoDb Compass e clicar em export file e salvar num local onde você deseja.
+4. Paso: ahora importemos los datos localmente de MongoDb a CosmosDb. Simplemente abra MongoDb Compass y haga clic en exportar archivo y guárdelo en la ubicación donde lo desee.
 
-5. Passo: agora vamos executar o seguinte comando abaixo. Esse comando será responsável por migrar o arquivo criado no passo anterior para enviar para o CosmosDb. 
+5. Paso: Ahora ejecutemos el siguiente comando. Este comando será responsable de migrar el archivo creado en el paso anterior para cargarlo en CosmosDb. 
 
 ```bash
 > mongoimport.exe --host crud--serverless-<inclua-seu-nome>.documents.azure.com:10255 -u crud--serverless-<inclua-seu-nome> -p <primary-key-criada-cosmosdb> --ssl --sslAllowInvalidCertificates --db crud--serverless-<inclua-seu-nome> --collection funcionarios --file funcionarios.json
 ```
-E pronto! Ao abrir o Portal Azure e acessar o recurso do Azure CosmosDb, verá que os seus dados locais, foram migrados com sucesso no Azure CosmosDb!
+Y listo! Cuando se abre el Portal de Azure y acceder al recurso Azure CosmosDb, verá que sus datos locales, se han migrado con éxito en Azure CosmosDb!
 
-## Links & Recursos Importantes ⭐️
+## Enlaces y Recursos Importantes ⭐️
 
-Durante o workshop, comentei sobre importantes documentações, links e recursos que podem auxiliar o seu conhecimento sobre Serverless & Azure Functions
+Durante el workshop, hablé sobre muchas documentaciones importantes, enlaces y recursos que pueden ayudarlo a conocer más sobre Azure Functions y Azure.
 
-- ✅ **[Azure para devs JavaScript & Node.js](https://docs.microsoft.com/pt-br/javascript/azure/?WT.mc_id=meanserverlessworkshop-github-gllemos&view=azure-node-latest)**
-- ✅ **[Documentação Azure Functions](https://docs.microsoft.com/pt-br/azure/azure-functions/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
-- ✅ **[Criando a sua Primeira Função no Visual Studio Code](https://docs.microsoft.com/pt-br/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+- ✅ **[Azure para desarrolladores de JavaScript y Node.js](https://docs.microsoft.com/es-es/javascript/azure/?WT.mc_id=meanserverlessworkshop-github-gllemos&view=azure-node-latest)**
+- ✅ **[Documentación de Azure Functions](https://docs.microsoft.com/es-es/azure/azure-functions/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+- ✅ **[Creación de la primera función mediante Visual Studio Code](https://docs.microsoft.com/es-es/azure/azure-functions/functions-create-first-function-vs-code?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 - ✅ **[Extensão Vs Code – Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=meanserverlessworkshop-github-gllemos)**
-- ✅ **[E-Book Grátis - Azure Serverless Computing Cookbook](https://azure.microsoft.com/pt-br/resources/azure-serverless-computing-cookbook/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
-- ✅ **[Cursos Grátis - Azure Functions](https://docs.microsoft.com/pt-br/learn/paths/create-serverless-applications/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+- ✅ **[E-Book Grátis - Azure Serverless Computing Cookbook](https://azure.microsoft.com/es-es/resources/azure-serverless-computing-cookbook/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-## Tenho Dúvidas... O que Faço?! ❓
+## Tengo dudas ... ¿Qué hago? ❓
 
-Caso tenham dúvidas aos códigos dos projetos relacionados aos workshops, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/glaucia86/workshop-mean-serverless/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
-
-
-**(documentação em desenvolvimento)**
+Si tiene preguntas sobre los códigos de proyecto relacionados con los workshops, no dude en abrir un **[ISSUE AQUI](https://github.com/glaucia86/workshop-mean-serverless/issues)**. ¡Tan pronto como sea posible, responderé cualquier pregunta que pueda tener!
