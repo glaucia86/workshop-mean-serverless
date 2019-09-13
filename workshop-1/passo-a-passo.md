@@ -1,6 +1,4 @@
-Este artigo faz parte da coleção de conteúdos do #ServerlessSeptember. Aqui você encontrará todos os artigos publicados durante o mês de Setembro de 2019.
-
-Durante esse artigo você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!
+Durante esse workshop você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!
 
 O projeto MEAN já está pronto e vocês podem fazer um git clone ou download **[AQUI](https://github.com/glaucia86/workshop-mean-serverless)**
 
@@ -50,7 +48,7 @@ Já as linguagens abaixo, já possui suporte, porém estão na sua versão previ
 
 Se desejarem saber mais detalhes das linguagens que possuem suporte ao Azure Functions, bastam acessar o link **[AQUI](https://docs.microsoft.com/azure/azure-functions/supported-languages?WT.mc_id=meanserverlessworkshop-github-gllemos)**.
 
-Porém, para esse artigo focaremos no JavaScript! 😉
+Porém, para esse workshop focaremos no JavaScript! 😉
 
 ## Templates Importantes no Azure Functions
 
@@ -66,7 +64,7 @@ Antes de começar a realizar a migração é importante mencionar que o **[Azure
 - **[ServiceBusQueueTrigger](https://docs.microsoft.com/azure/azure-functions/functions-bindings-service-bus?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 - **[ServiceBusTopicTrigger](https://docs.microsoft.com/azure/azure-functions/functions-bindings-service-bus?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
-Não entrarei em detalhes de cada um, pois senão esse artigo ficará muito grande. Mas, caso desejam entender mais sobre cada template e qual o seu melhor uso numa determinada aplicação recomendo a leitura na documentação **[AQUI](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=meanserverlessworkshop-github-gllemos)**. 
+Não entrarei em detalhes de cada um, pois senão esse workshop ficará muito grande. Mas, caso desejam entender mais sobre cada template e qual o seu melhor uso numa determinada aplicação recomendo a leitura na documentação **[AQUI](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=meanserverlessworkshop-github-gllemos)**. 
 
 Para esse post, estaremos fazendo uso do - **[HTTPTrigger](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=meanserverlessworkshop-github-gllemos)** uma vez que esse template dispara a execução do seu código usando uma solicitação HTTP. E é justamente o que precisaremos!
 
