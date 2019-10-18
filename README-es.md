@@ -217,6 +217,66 @@ El proceso de migración de datos persistentes localmente de MongoDb a CosmosDb 
 ```
 Y listo! Cuando se abre el Portal de Azure y acceder al recurso Azure CosmosDb, verá que sus datos locales, se han migrado con éxito en Azure CosmosDb!
 
+## Implementando la aplicación en Azure ☁️
+
+Para implementar la aplicación en la nube debemos seguir los pasos: (todos 
+
+1. Hacer la configuración de un usuario de implementación con el comando (**todos los comandos deben ejecutarse usando Azure cli**)
+
+```bash
+> az webapp deployment user set --user-name <username> --password <password>
+```
+
+Si todo va bien, aparece el siguiente mensaje:
+
+[![Screen-Shot-04-09-19-at-03-57-PM.png](https://i.postimg.cc/ZnnpH07T/Screen-Shot-04-09-19-at-03-57-PM.png)](https://postimg.cc/tn0sCRGf)
+
+2. Después, debemos crear un plan de App Service con el comando:
+
+```bash
+> az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku FREE
+```
+
+Si ve el mensaje: **Succeeded**, ¡se creó con éxito!
+
+[![Screen-Shot-04-09-19-at-04-05-PM.png](https://i.postimg.cc/NM2vhkPS/Screen-Shot-04-09-19-at-04-05-PM.png)](https://postimg.cc/MMwFVVwm)
+
+3. Ahora creemos una aplicación web. Para hacer esto, ejecute el siguiente comando: ejecute el siguiente comando en: **BASH**
+
+```bash
+> az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app-name> --runtime "NODE|6.9" --deployment-local-git
+```
+
+[![Screen-Shot-04-09-19-at-04-28-PM.png](https://i.postimg.cc/8CcLSZg1/Screen-Shot-04-09-19-at-04-28-PM.png)](https://postimg.cc/ns8XKYL5)
+
+La dirección URL del repositorio de Git remoto se muestra en la propiedad deploymentLocalGitUrl, con el formato `https://<username>@<app-name>.scm.azurewebsites.net/<app-name>.git`. Guarde esta dirección URL, ya que la necesitará más adelante.
+
+4. Vamos ahora configurar una variable de entorno:
+
+```bash
+> az webapp config appsettings set --name <app_name> --resource-group myResourceGroup --settings MONGODB_URI="mongodb://<cosmosdb_name>:<primary_master_key>@<cosmosdb_name>.documents.azure.com:10250/mean?ssl=true"
+```
+
+Después de realizar el paso anterior, generará el json:
+
+[![Screen-Shot-04-09-19-at-04-38-PM-001.png](https://i.postimg.cc/FH47pDHP/Screen-Shot-04-09-19-at-04-38-PM-001.png)](https://postimg.cc/hf2DP8xx)
+
+6. Ahora ya casi hemos terminado. Volvamos a nuestra aplicación y enviemos la información a Azure. Abra el terminal en Visual Studio Code y ejecute el siguiente comando:
+
+```bash
+> git remote add azure <deploymentLocalGitUrl-from-create-step>
+```
+
+Y luego ejecuta el comando:
+
+```bash
+> git push azure master
+```
+
+Vaya a la aplicación implementada mediante el explorador web: `http://<app_name>.azurewebsites.net` y listo!
+
+Si desea obtener más detalles sobre cómo implementar una aplicación MEAN en Azure, visite el enlace **[AQUÍ](https://docs.microsoft.com/es-es/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app#deploy-app-to-azure)**
+
 ## Enlaces y Recursos Importantes ⭐️
 
 Durante el workshop, hablé sobre muchas documentaciones importantes, enlaces y recursos que pueden ayudarlo a conocer más sobre Azure Functions y Azure.
