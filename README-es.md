@@ -275,7 +275,7 @@ Y luego ejecuta el comando:
 
 Vaya a la aplicación implementada mediante el explorador web: `http://<app_name>.azurewebsites.net` y listo!
 
-Si desea obtener más detalles sobre cómo implementar una aplicación MEAN en Azure, visite el enlace **[AQUÍ](https://docs.microsoft.com/es-es/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app#deploy-app-to-azure)**
+Si desea obtener más detalles sobre cómo implementar una aplicación MEAN en Azure, visite el enlace **[AQUÍ](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-nodejs-mongodb-app?WT.mc_id=meanserverlessworkshop-github-gllemos#deploy-app-to-azure)**
 
 ## Enlaces y Recursos Importantes ⭐️
 
