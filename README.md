@@ -215,6 +215,10 @@ O processo de migração dos dados localmente persistidos pelo MongoDb para o Co
 ```
 E pronto! Ao abrir o Portal Azure e acessar o recurso do Azure CosmosDb, verá que os seus dados locais, foram migrados com sucesso no Azure CosmosDb!
 
+## Deploy para o Azure ☁️
+
+
+
 ## Links & Recursos Importantes ⭐️
 
 Durante o workshop, comentei sobre importantes documentações, links e recursos que podem auxiliar o seu conhecimento sobre Serverless & Azure Functions
