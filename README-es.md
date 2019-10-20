@@ -219,7 +219,15 @@ Y listo! Cuando se abre el Portal de Azure y acceder al recurso Azure CosmosDb, 
 
 ## Implementando la aplicación en Azure ☁️
 
-Para implementar la aplicación en la nube debemos seguir los pasos: (todos 
+Para implementar la aplicación en la nube debemos seguir los pasos: (todos los pasos deben usar el Azure CLI)
+
+Pero antes, debemos ejecutar el comando adentro de la carpeta `front`:
+
+```bash
+> ng build
+```
+
+Vas a generar una otra carpeta llamada `dist`. Y es justo ella que iremos necesitar para implementar en la nube! ;)
 
 1. Hacer la configuración de un usuario de implementación con el comando (**todos los comandos deben ejecutarse usando Azure cli**)
 
