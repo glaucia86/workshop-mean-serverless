@@ -217,7 +217,23 @@ E pronto! Ao abrir o Portal Azure e acessar o recurso do Azure CosmosDb, verá q
 
 ## Deploy para o Azure ☁️
 
+Para realizar o deploy da aplicação ao Azure precisamos seguir com alguns pessos:
 
+Mas antes, vá até a pasta `front` e execute o seguinte o seguinte comando:
+
+```bash
+> ng build
+```
+
+Esse comando irá gerar uma pasta chamada `dist`. E é justamente essa pasta que precisaremos para realizar o deploy da nossa aplicação MEAN ao Azure.
+
+1. Execute o seguinte comando dentro da pasta `dist` com o seguinte comando: 
+
+```bash
+> az webapp up -n <nombre-de-la-app>
+```
+
+E pronto! Agora podemos abrir a nossa aplicação no browser!
 
 ## Links & Recursos Importantes ⭐️
 
