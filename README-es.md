@@ -32,7 +32,7 @@ Los datos del Empleado consisten en:
 
 ## Azure for Students ⭐️
 
-Si es estudiante en cualquier colegio o universidad, puede crear su cuenta de Azure for Students **[Azure for Students](https://azure.microsoft.com/es-es/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/es-es/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
+Si es estudiante en cualquier colegio o universidad, puede crear su cuenta de Azure for Students **[Azure for Students](https://azure.microsoft.com/es-es/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Esta cuenta le dará el beneficio de tener un crédito de $ 100 para usar los servicios de forma gratuita, sin tener una tarjeta de crédito. Para activar esta cuenta, haga clic: **[AQUÍ](https://azure.microsoft.com/es-es/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
 ## Requisitos Necesarios 📌
 
