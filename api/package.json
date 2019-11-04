@@ -43,7 +43,7 @@
     "eslint-plugin-html": "^5.0.5",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
-    "mongoose": "^5.5.12",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1"
   }
 }
