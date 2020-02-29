@@ -1,3 +1,7 @@
+# Migrando uma Aplicação MEAN para Arquitetura Serverless & Azure Functions
+
+[![bit-azure.png](https://i.postimg.cc/ZKwS8SHj/bit-azure.png)](https://postimg.cc/vcxkyCp6)
+
 Durante esse workshop você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!
 
 O projeto MEAN já está pronto e vocês podem fazer um git clone ou download **[AQUI](https://github.com/glaucia86/workshop-mean-serverless)**
@@ -66,7 +70,7 @@ Antes de começar a realizar a migração é importante mencionar que o **[Azure
 
 Não entrarei em detalhes de cada um, pois senão esse workshop ficará muito grande. Mas, caso desejam entender mais sobre cada template e qual o seu melhor uso numa determinada aplicação recomendo a leitura na documentação **[AQUI](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=meanserverlessworkshop-github-gllemos)**. 
 
-Para esse post, estaremos fazendo uso do - **[HTTPTrigger](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=meanserverlessworkshop-github-gllemos)** uma vez que esse template dispara a execução do seu código usando uma solicitação HTTP. E é justamente o que precisaremos!
+Para esse tutorial, estaremos fazendo uso do - **[HTTPTrigger](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=meanserverlessworkshop-github-gllemos)** uma vez que esse template dispara a execução do seu código usando uma solicitação HTTP. E é justamente o que precisaremos!
 
 Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no **[Azure for Students](https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Com essa conta, você poderá fazer uso de **1.000.000 solicitações gratuitas por mês para processar eventos no Azure Functions!**
 
