@@ -39,7 +39,7 @@ export class FuncionarioEditComponent implements OnInit {
   /**
    * Método responsável por atualizar o 'Funcionario'
    */
-  atualizarFuncionario(nomeFuncionario, cargo, numeroIdentificador, id) {
+  atualizarFuncionario(nomeFuncionario, cargo, numeroIdentificador) {
     this.route.params.subscribe(params => {
       this.funcionarioService.atualizarFuncionario(nomeFuncionario, cargo, numeroIdentificador, params.id);
       // ==> Depois que clicar no botão 'Atualizar' redirecionar para a lista de Funcionarios

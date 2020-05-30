@@ -13,8 +13,8 @@
       <td>{{ funcionario.nomeFuncionario }}</td>
       <td align="center">{{ funcionario.cargo }}</td>
       <td align="center">{{ funcionario.numeroIdentificador }}</td>
-      <td align="center"><a [routerLink]="['/funcionario', funcionario._id]" class="btn btn-success"> <fa name="edit"></fa> Editar</a></td>
-      <td align="center"><button (click)="excluirFuncionario(funcionario._id)" class="btn btn-danger"> <fa name="trash"></fa> Excluir</button></td>
+      <td align="center"><a [routerLink]="['/funcionario', funcionario._id]" class="btn btn-success"> <fa-icon [icon]="['fas','edit']"></fa-icon> Editar</a></td>
+      <td align="center"><button (click)="excluirFuncionario(funcionario._id)" class="btn btn-danger"> <fa-icon [icon]="['fas','trash']"></fa-icon> Excluir</button></td>
     </tr>
   </tbody>
 </table>

@@ -43,7 +43,7 @@
 
       <div class="form-group">
         <button (click)="atualizarFuncionario(nomeFuncionario.value, cargo.value, numeroIdentificador.value)" type="submit" class="btn btn-primary"
-          [disabled]="funcionarioForm.invalid"><fa name="edit"></fa> Atualizar
+          [disabled]="funcionarioForm.invalid"> <fa-icon [icon]="['fas','edit']"></fa-icon> Atualizar
         </button>
       </div>
     </form>

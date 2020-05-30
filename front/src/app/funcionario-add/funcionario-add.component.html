@@ -52,7 +52,7 @@
           <button (click)="adicionarFuncionario(nomeFuncionario.value, cargo.value, numeroIdentificador.value)"
             class="btn btn-primary"
             [disabled]="funcionarioForm.pristine || funcionarioForm.invalid">
-            <fa name="plus"></fa> Funcionário
+            <fa-icon [icon]="['fas','user-plus']"></fa-icon> Funcionário
           </button>
         </div>
       </div>
