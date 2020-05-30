@@ -20,34 +20,42 @@ export class FuncionarioGetComponent implements OnInit {
       .getFuncionarios()
       .subscribe((data: Funcionario[]) => {
         this.funcionarios = data;
-    });
+      });
   }
 
   /**
    * Método responsável por excluir um 'Funcionario' pelo 'Id'
    */
   excluirFuncionario(id: any) {
-    this.funcionarioService.excluirFuncionario(id).subscribe(res => {
+    /*this.funcionarioService.excluirFuncionario(id).subscribe(res => {
       const index = this.funcionarios.indexOf(id);
-      this.funcionarios.splice(index, 1);
+      this.funcionarios.splice(index, 1);*/
 
-      Swal.fire({
-        title: 'Você tem certeza que deseja excluir o(a) Funcionário?',
-        text: 'Atenção! Este Funcionário será Excluído(a)!',
-        type: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Sim. Exclua!'
-      }).then((result) => {
-        if (result.value) {
-          Swal.fire(
-            'Excluído(a)!',
-            'Funcionário foi excluído(a).',
-            'success'
-          );
-        }
-      });
+    Swal.fire({
+      title: 'Você tem certeza que deseja excluir o(a) Funcionário?',
+      text: 'Atenção! Este Funcionário será Excluído(a)!',
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Sim. Exclua!'
+    }).then((result) => {
+      if (result.value === true) {
+        this.funcionarioService.excluirFuncionario(id).subscribe();
+        const index = this.funcionarios.indexOf(id);
+        this.funcionarios.splice(index, 1);
+        Swal.fire(
+          'Excluído(a)!',
+          'Funcionário foi excluído(a).',
+          'success'
+        );
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        Swal.fire(
+          'Cancelado!',
+          'Retornando a lista de funcionários(as)',
+          'error'
+        );
+      }
     });
   }
 
