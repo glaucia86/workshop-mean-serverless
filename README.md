@@ -30,6 +30,8 @@ Os dados do Funcionário consiste em:
 * **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Azure Storage Account](https://azure.microsoft.com/pt-br/services/storage/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 
+> Angular v.9.x
+
 ## Conta - Azure for Students ⭐️
 
 Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade ou Universidade, poderá criar sua conta no **[Azure for Students](https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**. Essa conta te dará o benefício em possuir crédito de USD 100,00 para usar os serviços de maneira gratuita, sem necessidade de possuir um cartão de crédito. Para ativar essa conta, bastam acessar o link ao lado: **[AQUI](https://azure.microsoft.com/pt-br/free/students/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
