@@ -23,6 +23,7 @@ Os dados do Funcionário consiste em:
 * **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Node.js](https://nodejs.org/en/)**
 * **[Postman](https://www.getpostman.com/)**
+* **[Angular CLI](https://cli.angular.io/)**
 * **[Conta - Azure](https://azure.microsoft.com/pt-br/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Azure Web App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=meanserverlessworkshop-github-gllemos)**
 * **[Mongodb Community Server](https://www.mongodb.com/download-center/community)**
