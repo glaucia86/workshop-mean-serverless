@@ -428,7 +428,7 @@ Novamente está funcionando perfeitamente. Já observaram que é fácil criar um
 Agora que já ficou muito claro a todos aqui como é fácil criar um CRUD com o Azure Functions, vou começar a acelerar o processo de criação e só informar o que foi alterado nos arquivos `function.json` e `index.js`
 
 
-- **GetFuncionarioById/index.js**
+- **GetFuncionarioById/function.js**
 
 ```json
 {
@@ -449,7 +449,7 @@ Agora que já ficou muito claro a todos aqui como é fácil criar um CRUD com o 
 }
 ```
 
-- **GetFuncionarioById/function.json**
+- **GetFuncionarioById/index.json**
 
 ```javascript
 // @ts-nocheck
@@ -503,7 +503,7 @@ Não vamos testar agora. Vamos desenvolver as duas últimas funções: `Update` 
 Novamente, vamos criar uma nova função e alterar os arquivos `function.json` e `index.js`:
 
 
-- **UpdateFuncionario/index.js**
+- **UpdateFuncionario/function.js**
 
 ```json
 {
@@ -557,7 +557,7 @@ module.exports = async function (context, req) {
   try {
     const funcionarios = await Funcionarios.findOneAndUpdate(
       { _id: ObjectID(id) },
-      { set: funcionario }
+      { $set: funcionario }
     )
 
     connection.close()
