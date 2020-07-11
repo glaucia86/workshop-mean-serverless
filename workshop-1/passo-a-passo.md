@@ -503,7 +503,7 @@ Não vamos testar agora. Vamos desenvolver as duas últimas funções: `Update` 
 Novamente, vamos criar uma nova função e alterar os arquivos `function.json` e `index.js`:
 
 
-- **UpdateFuncionario/index.js**
+- **UpdateFuncionario/function.js**
 
 ```json
 {
@@ -557,7 +557,7 @@ module.exports = async function (context, req) {
   try {
     const funcionarios = await Funcionarios.findOneAndUpdate(
       { _id: ObjectID(id) },
-      { set: funcionario }
+      { $set: funcionario }
     )
 
     connection.close()
