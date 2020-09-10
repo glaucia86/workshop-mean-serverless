@@ -133,7 +133,7 @@ E ele irá listar todos os endpoints criados e necessários para persistir junta
 7. Execute o projeto Angular com o comando: 
 
 ```bash
-> ng server -o
+> ng serve -o
 ```
 
 E vòilá! Só começar a persistir!
